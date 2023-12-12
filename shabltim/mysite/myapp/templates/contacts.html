@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h2>Contacts</h2>
+  <ul>
+    {% for method, contact in contacts.items %}
+      <li>{{ method }}: {{ contact }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
